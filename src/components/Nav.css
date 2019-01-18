@@ -1,0 +1,77 @@
+/* Menu */
+#menu {
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+}
+
+.menu-option {
+    color: white;
+    background: darkgray;
+    border: 1px solid lightgray;
+    margin: 0px;
+    padding: 7px 0px;
+    position: relative;
+    left: 100vw;
+}
+
+.menu-option:hover {
+    transform: scale(1.1);
+}
+
+/*Drop-Down Toggle */
+#drop-down-toggle {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+#drop-down-toggle:hover {
+    cursor: pointer;
+}
+
+.drop-down-toggle-bar {
+    width: 30px;
+    height: 5px;
+    background: white;
+    border: solid black 1px;
+    margin-top: 5px;
+    border-radius: 25%;
+}
+
+.visible {
+    animation-name: slide-in;
+    animation-duration: 700ms;
+    position: relative;
+    left: 0px;
+}
+
+.hidden {
+    animation-name: slide-out;
+    animation-duration: 700ms;
+}
+
+
+@keyframes slide-in {
+    from{
+        position: relative;
+        left: 100vw;
+    }
+    to{
+        position: relative;
+        left: 0px;
+    }
+}
+
+@keyframes slide-out {
+    from{
+        position: relative;
+        left: 0px;
+    }
+    to{
+        position: relative;
+        left: 100vw;
+    }
+}
