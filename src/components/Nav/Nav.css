@@ -8,8 +8,8 @@
 
 .menu-option {
     color: white;
-    background: darkgray;
-    border: 1px solid lightgray;
+    background: black;
+    border: 1px solid grey;
     margin: 0px;
     padding: 7px 0px;
     position: relative;
@@ -18,6 +18,49 @@
 
 .menu-option:hover {
     transform: scale(1.1);
+}
+
+.visible {
+    animation-name: slide-in;
+    animation-duration: 700ms;
+    position: relative;
+    left: 0px;
+}
+
+.hidden {
+    animation-name: slide-out;
+    animation-duration: 700ms;
+}
+
+
+@keyframes slide-in {
+    from{
+        position: relative;
+        left: 100vw;
+        color: black;
+        background: white;
+    }
+    to{
+        position: relative;
+        left: 0px;
+        color: white;
+        background: black;
+    }
+}
+
+@keyframes slide-out {
+    from{
+        position: relative;
+        left: 0px;
+        color: white;
+        background: black;
+    }
+    to{
+        position: relative;
+        left: 100vw;
+        color: black;
+        background: white;
+    }
 }
 
 /*Drop-Down Toggle */
@@ -41,37 +84,4 @@
     border-radius: 25%;
 }
 
-.visible {
-    animation-name: slide-in;
-    animation-duration: 700ms;
-    position: relative;
-    left: 0px;
-}
 
-.hidden {
-    animation-name: slide-out;
-    animation-duration: 700ms;
-}
-
-
-@keyframes slide-in {
-    from{
-        position: relative;
-        left: 100vw;
-    }
-    to{
-        position: relative;
-        left: 0px;
-    }
-}
-
-@keyframes slide-out {
-    from{
-        position: relative;
-        left: 0px;
-    }
-    to{
-        position: relative;
-        left: 100vw;
-    }
-}
