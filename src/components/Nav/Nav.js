@@ -19,16 +19,16 @@ class Nav extends Component {
       }));
       setTimeout(() => {this.setState(state => ({
         projectsVisible: !state.projectsVisible
-      }))}, 350);
+      }))}, 200);
       setTimeout(() => {this.setState(state => ({
         resumeVisible: !state.resumeVisible
-      }))}, 700);
+      }))}, 300);
       setTimeout(() => {this.setState(state => ({
         contactVisible: !state.contactVisible
-      }))}, 1050);
+      }))}, 400);
       setTimeout(() => {this.setState({
         menuHasBeenToggled: true
-      })}, 1100);
+      })}, 500);
     }
 
     hideMenu(){
@@ -37,13 +37,13 @@ class Nav extends Component {
       });
       setTimeout(() => {this.setState({
         projectsVisible: false
-      })}, 350);
+      })}, 200);
       setTimeout(() => {this.setState({
         resumeVisible: false
-      })}, 700);
+      })}, 300);
       setTimeout(() => {this.setState({
         contactVisible: false
-      })}, 1050);
+      })}, 400);
     }
 
     render() {

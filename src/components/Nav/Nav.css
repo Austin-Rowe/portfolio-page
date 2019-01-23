@@ -4,6 +4,7 @@
     position: fixed;
     top: 0px;
     width: 100vw;
+    z-index: 1;
 }
 
 .menu-option {
@@ -22,14 +23,14 @@
 
 .visible {
     animation-name: slide-in;
-    animation-duration: 700ms;
+    animation-duration: 500ms;
     position: relative;
     left: 0px;
 }
 
 .hidden {
     animation-name: slide-out;
-    animation-duration: 700ms;
+    animation-duration: 500ms;
 }
 
 
@@ -68,7 +69,7 @@
     position: fixed;
     right: 10px;
     top: 10px;
-    z-index: 1;
+    z-index: 2;
 }
 
 #drop-down-toggle:hover {

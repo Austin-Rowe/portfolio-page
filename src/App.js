@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './App.css';
 import Nav from './components/Nav/Nav';
-import About from './components/About/About';
+import Landing from './components/Landing/Landing';
 
 class App extends Component {
   
@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Nav />
-        <About />
+        <Landing />
       </React.Fragment>
     );
   }
