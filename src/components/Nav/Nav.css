@@ -15,6 +15,7 @@
     padding: 7px 0px;
     position: relative;
     left: 100vw;
+    font-size: 1.5em;
 }
 
 .menu-option:hover {

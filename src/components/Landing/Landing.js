@@ -4,7 +4,7 @@ import './Landing.css';
 
 const Desktop = () => {
     return(
-        <div id="landing-landscape">
+        <div id="landing-desktop">
             <img src="https://placeimg.com/1000/563/tech/grayscale" alt="failure" id="landing-background-image" />
             <h1 id="landing-quote-desktop">“It is not enough for code to work.” <br/>― Robert C. Martin</h1>
         </div>
@@ -13,7 +13,7 @@ const Desktop = () => {
 
 const Mobile = () => {
     return(
-         <div id="landing-landscape">
+         <div id="landing-mobile">
             <img src="https://placeimg.com/563/1000/tech/grayscale" alt="failure" id="landing-background-image" />
             <h1 id="landing-quote">“It is not enough for code to work.” <br/>― Robert C. Martin</h1>
         </div>
@@ -31,7 +31,7 @@ class Landing extends Component {
 
     determineMobile(){
         this.setState({
-            mobile: window.innerWidth < 769
+            mobile: window.innerWidth < 550
         })
     }
 

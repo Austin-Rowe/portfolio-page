@@ -1,4 +1,15 @@
-/*Quote*/
+/*Container*/
+#landing-mobile {
+    min-width: 100vw;
+    min-height: 145vh;
+}
+
+
+#landing-desktop {
+    width: 100vw;
+    height: 105vh;
+}
+
 #landing-quote {
     position: absolute;
     top: 50%;
@@ -19,9 +30,8 @@
     font-size: 2em;
 }
 
-/*Background*/
 #landing-background-image {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

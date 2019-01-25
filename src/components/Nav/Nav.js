@@ -55,7 +55,7 @@ class Nav extends Component {
             <div className="drop-down-toggle-bar" ></div>
           </div>
           <div id="menu" onMouseLeave={this.hideMenu}>
-            <h2 onClick={this.hideMenu} className={this.state.aboutVisible? "menu-option visible" : this.state.menuHasBeenToggled? 'menu-option hidden' : 'menu-option' } >About Me</h2>
+            <a href="#about-container"><h2 onClick={this.hideMenu} className={this.state.aboutVisible? "menu-option visible" : this.state.menuHasBeenToggled? 'menu-option hidden' : 'menu-option' } >About Me</h2></a>
             <h2 onClick={this.hideMenu} className={this.state.projectsVisible? "menu-option visible" : this.state.menuHasBeenToggled? 'menu-option hidden' : 'menu-option' } >Projects</h2>
             <h2 onClick={this.hideMenu} className={this.state.resumeVisible? "menu-option visible" : this.state.menuHasBeenToggled? 'menu-option hidden' : 'menu-option' } >My Resume</h2>
             <h2 onClick={this.hideMenu} className={this.state.contactVisible? "menu-option visible" : this.state.menuHasBeenToggled? 'menu-option hidden' : 'menu-option' } >Contact Me</h2>

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Nav from './components/Nav/Nav';
 import Landing from './components/Landing/Landing';
+import About from './components/About/About';
 
 class App extends Component {
   
@@ -11,6 +12,7 @@ class App extends Component {
       <React.Fragment>
         <Nav />
         <Landing />
+        <About />
       </React.Fragment>
     );
   }
