@@ -4,73 +4,80 @@
     position: fixed;
     top: 0px;
     width: 100vw;
-    z-index: 1;
+    z-index: 2;
 }
 
 .menu-option {
+    background-color: black;
     color: white;
-    background: black;
-    border: 1px solid grey;
-    margin: 0px;
-    padding: 7px 0px;
-    position: relative;
-    left: 100vw;
-    font-size: 1.5em;
+    margin: 0;
+    height: 40px;
+    padding-top: 10px;
+    border: 1px solid white;
 }
 
 .menu-option:hover {
     transform: scale(1.1);
 }
 
-.visible {
-    animation-name: slide-in;
-    animation-duration: 500ms;
+.menu-link {
     position: relative;
-    left: 0px;
+    left: 100vw;
+    z-index: 2;
+}
+
+.visible {
+    animation: slide-in 500ms;
+    position: relative;
+    left: 0;
+    z-index: 2;
 }
 
 .hidden {
-    animation-name: slide-out;
-    animation-duration: 500ms;
+    animation: slide-out 500ms;
 }
 
-
-@keyframes slide-in {
+@keyframes slide-in{
     from{
         position: relative;
         left: 100vw;
-        color: black;
-        background: white;
     }
     to{
         position: relative;
-        left: 0px;
-        color: white;
-        background: black;
+        left: 0;
     }
 }
 
-@keyframes slide-out {
-    from{
-        position: relative;
-        left: 0px;
-        color: white;
-        background: black;
+@keyframes slide-out{
+    0%{
+        position: relative; 
+        left: 0;
     }
-    to{
+    25%{
+        position: relative;
+        left: 25vw;
+    }
+    50%{
+        position: relative;
+        left: 60vw;
+    }
+    75% {
+        position: relative;
+        left: 85vw;
+    }
+    100% {
         position: relative;
         left: 100vw;
-        color: black;
-        background: white;
     }
 }
+
 
 /*Drop-Down Toggle */
 #drop-down-toggle {
     position: fixed;
     right: 10px;
     top: 10px;
-    z-index: 2;
+    z-index: 3;
 }
 
 #drop-down-toggle:hover {
@@ -85,5 +92,3 @@
     margin-top: 5px;
     border-radius: 25%;
 }
-
-

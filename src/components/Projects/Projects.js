@@ -60,7 +60,7 @@ class Projects extends Component {
                         </ul>
                     </div>
                     
-                    <div className="image-gallery">
+                    <div className="project-image-gallery">
                         <ImageGallery items={extensionImages} showPlayButton={false}  />
                     </div>
                 </div>
@@ -79,7 +79,7 @@ class Projects extends Component {
                         </ul>
                     </div>
                     
-                    <div className="image-gallery">
+                    <div className="project-image-gallery">
                         <ImageGallery items={rugzillaImages} showPlayButton={false}  />
                     </div>
                 </div>

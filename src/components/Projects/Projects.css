@@ -24,9 +24,12 @@
     padding: 0 50px;
 }
 
-.image-gallery{
+.project-image-gallery{
     margin: 0 auto;
     max-width: 90%;
+    position: relative;
+    left: 0;
+    z-index: 1;
 }
 
 
@@ -65,7 +68,7 @@
         padding: 0 0 0 15%;
     }
 
-    .image-gallery {
+    .project-image-gallery {
         grid-column: 2/3;
         grid-row: 2/4;
     }
