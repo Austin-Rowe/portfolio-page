@@ -22,7 +22,7 @@ class Contact extends Component {
                     </a>
                 </div>
                 <div className="contact-link-container">
-                    <a className="contact-link" href="http://github.com/Austin-Rowe">
+                    <a className="contact-link" href="http://github.com/Austin-Rowe" target="_blank" rel="noopener noreferrer">
                         <img className="contact-icon" src="/githubIcon.svg" alt="github"/>
                         <h2 className="contact-text" >GitHub</h2>
                     </a>

@@ -20,6 +20,42 @@
     transform: scale(1.1);
 }
 
+.sub-menu-option {
+    background-color: white;
+    color: black;
+    margin: 0;
+    height: 40px;
+    padding-top: 15px;
+    border: 1px solid black;
+    display: none;
+}
+
+.sub-menu-option:hover{
+    transform: scale(1.1);
+}
+
+.contact-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.contact-icon:hover {
+    transform: scale(1.3) rotate(360deg);
+}
+
+.contact-text {
+    display: inline;
+}
+
+.sub-menu-option:hover .contact-icon {
+    transform: scale(1.3) rotate(360deg);
+}
+
+#contact-link:hover .sub-menu-option{
+    display: block;
+}
+
 .menu-link {
     position: relative;
     left: 100vw;

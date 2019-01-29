@@ -46,12 +46,12 @@ class Projects extends Component {
             }
         ]
         return ( 
-            <a id="projects-container">
+            <div id="projects-container">
                 <h1 id="projects-title">My Projects</h1>
                 <div className="project-container">
                     <h2 className="project-title" >Chrome Extension</h2>
                     <div className="project-description-features">
-                        <p className="project-description">This is a Chrome extension that I built for my current workplace so that we could create price sheets for our products more effeciently/aesthetically. You can check it out <a href="https://chrome.google.com/webstore/detail/price-sheet-processor/kibjjcncfioajehabcbdomochdolnkok" target="_blank">here.</a></p>
+                        <p className="project-description">This is a Chrome extension that I built for my current workplace so that we could create price sheets for our products more effeciently/aesthetically. You can check it out <a href="https://chrome.google.com/webstore/detail/price-sheet-processor/kibjjcncfioajehabcbdomochdolnkok" target="_blank" rel="noopener noreferrer">here.</a></p>
                         <ul className="project-features-list">
                             <b>It uses:</b>
                             <li>Vanilla JavaScript</li>
@@ -67,7 +67,7 @@ class Projects extends Component {
                 <div className="project-container">
                     <h2 className="project-title" >RugZilla Ecommerce</h2>
                     <div className="project-description-features">
-                        <p className="project-description">This is an ecommerce site I built. You can check it out <a href="http://ec2-18-188-129-119.us-east-2.compute.amazonaws.com:8000/" target="_blank">here.</a></p>
+                        <p className="project-description">This is an ecommerce site I built. You can check it out <a href="http://ec2-18-188-129-119.us-east-2.compute.amazonaws.com:8000/" target="_blank" rel="noopener noreferrer">here.</a></p>
                         <ul className="project-features-list">
                             <b>It uses:</b>
                             <li>ReactJS</li>
@@ -83,7 +83,7 @@ class Projects extends Component {
                         <ImageGallery items={rugzillaImages} showPlayButton={false}  />
                     </div>
                 </div>
-            </a>
+            </div>
         );
     }
 }

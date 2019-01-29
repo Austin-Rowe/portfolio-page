@@ -7,7 +7,7 @@ class About extends Component {
     state = {  }
     render() { 
         return ( 
-            <a id="about-container">
+            <div id="about-container">
                 <h1 id="about-title">About Me</h1>
                 <h3 className="about-header">Professional</h3>
                 <p className="about-text">
@@ -24,7 +24,7 @@ class About extends Component {
                 <p className="about-text">
                 I am a devout Christian and am always trying to emulate the life and love of Christ. One of my most meaningful seasons so far was when I went to the Harvest School in Pemba, Mozambique. The experience I had there taught me so much about the love of God for those who are lost and desperately in need of His touch through our lives as Christians. This understanding of God's love is my deepest motivation in all that I do and pursue.
                 </p>
-            </a>
+            </div>
         );
     }
 }
