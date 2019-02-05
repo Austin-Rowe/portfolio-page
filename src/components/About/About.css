@@ -12,5 +12,12 @@
 
 .about-text {
     font-size: 1.5em;
-    margin: 0 10vw 100px;
+    margin: 0 10vw 30px;
+}
+
+.about-pic {
+    max-width: 70vw;
+    margin: 10px auto;
+    border-radius: 30px;
+    filter: grayscale(100%);
 }
