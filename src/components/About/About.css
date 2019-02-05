@@ -17,7 +17,9 @@
 
 .about-pic {
     max-width: 70vw;
+    max-height: 85vh;
     margin: 10px auto;
-    border-radius: 30px;
+    border-radius: 100px;
+    border: 2px solid black;
     filter: grayscale(100%);
 }

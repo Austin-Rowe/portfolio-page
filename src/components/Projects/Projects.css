@@ -25,8 +25,9 @@
 }
 
 .project-image-gallery{
-    margin: 0 auto;
+    margin: 0 auto 200px;
     max-width: 90%;
+    max-height: 90vh;
     position: relative;
     left: 0;
     z-index: 1;
