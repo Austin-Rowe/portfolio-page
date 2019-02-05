@@ -1,16 +1,24 @@
 /*Container*/
-#landing-mobile {
-    min-width: 100vw;
-    min-height: 145vh;
-}
-
-
-#landing-desktop {
+#landing-container {
     width: 100vw;
-    height: 105vh;
+    height: 100vh;
 }
 
-#landing-quote {
+
+.landing-background {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://s3.us-east-2.amazonaws.com/austin-rowe/landing-port-gray.jpg');
+    filter: grayscale(100%) brightness(70%);
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align:center;
+    margin:auto;
+    padding:0;
+}
+
+.landing-quote {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,22 +28,12 @@
     font-size: 1.3em;
 }
 
-#landing-quote-desktop {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    font-size: 2em;
-}
+@media(min-width: 550px) {
+    .landing-background{
+        background-image: url('https://s3.us-east-2.amazonaws.com/austin-rowe/landing_land_gray.JPG');
+    }
 
-#landing-background-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100vw;
-    min-height: 100vh;
-    filter: brightness(30%);
+    .landing-quote {
+        font-size: 2em;
+    }
 }
