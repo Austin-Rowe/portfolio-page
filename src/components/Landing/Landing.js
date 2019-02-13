@@ -21,10 +21,6 @@ const Grayscale = () => {
 }
 
 class Landing extends Component {
-    constructor(){
-        super();
-    }
-
     render() {
         let landing = this.props.color? <Color /> : <Grayscale />;
         return(

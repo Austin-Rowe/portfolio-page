@@ -37,19 +37,10 @@ class App extends Component {
     switch(this.state.colorSwitchCount){
       case 1: this.setState({loadingComment: "LETS GET CREATIVE!"}); break;
       case 2: this.setState({loadingComment: "BACK TO BLAH"}); break;
-      case 3: this.setState({loadingComment: "BACK TO BEAUTY"}); break;
-      case 4: this.setState({loadingComment: "NOW YOU'RE WONDERING..."}); break;
-      case 5: this.setState({loadingComment: "YOU'LL NEVER KNOW UNLESS YOU TRY"}); break;
-      case 6: this.setState({loadingComment: "YOU SEEM COMMITED"}); break;
-      case 7: this.setState({loadingComment: "VERY COMMITED"}); break;
-      case 8: this.setState({loadingComment: "I LIKE THE DETERMINATION"}); break;
-      case 9: this.setState({loadingComment: "NOW THIS IS GETTING RIDICULOUS"}); break;
-      case 10: this.setState({loadingComment: "ALMOST THERE"}); break;
-      case 11: this.setState({loadingComment: "JUST A LITTLE FURTHER"}); break;
-      case 12: this.setState({loadingComment: "NEW LEVEL UNLOCKED"}); break;
-      case 13: this.setState({loadingComment: "YOU HAVE ARRIVED AT THE END"}); break;
-      case 14: this.setState({loadingComment: "HAHA JUST KIDDING"}); break;
-      case 15: this.setState({loadingComment: "THERE IS NO END"}); break;
+      case 3: this.setState({loadingComment: "NOW YOU'RE WONDERING..."}); break;
+      case 4: this.setState({loadingComment: "HOW FAR DOES THIS GO?"}); break;
+      case 5: this.setState({loadingComment: "YOU SEEM COMMITTED"}); break;
+      case 6: this.setState({loadingComment: "AND NOW IT PAYS OFF!"}); break;
       default: break;
     }
     this.setState(state => ({colorSwitchCount: state.colorSwitchCount + 1}));

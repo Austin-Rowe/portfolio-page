@@ -33,6 +33,15 @@
     z-index: 1;
 }
 
+.extension-image-gallery {
+    margin: 0 auto 50px;
+    max-width: 90%;
+    height: 90vh;
+    position: relative;
+    left: 0;
+    z-index: 1;
+}
+
 
 @media (min-width: 620px) and (max-width: 1000px) {
     .project-description-features{
@@ -40,7 +49,7 @@
     }
 }
 
-@media (min-width: 620px){
+@media (min-width: 800px){
 
     .project-container {
         display: grid;
@@ -72,5 +81,9 @@
     .project-image-gallery {
         grid-column: 2/3;
         grid-row: 2/4;
+    }
+
+    .extension-image-gallery {
+        height: 50vh;
     }
 }

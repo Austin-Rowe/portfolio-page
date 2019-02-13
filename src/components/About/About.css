@@ -18,10 +18,14 @@
 .about-pic {
     max-width: 70vw;
     max-height: 85vh;
-    margin: 10px auto;
+    margin: 10px auto 30px;
     border-radius: 100px;
     border: 2px solid black;
     filter: grayscale(100%);
+}
+
+#about-color-images-container {
+    margin: 30px auto;
 }
 
 .about-color-image {

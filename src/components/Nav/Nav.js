@@ -58,7 +58,7 @@ class Nav extends Component {
         <div id="menu" onMouseLeave={this.hideMenu}>
           <a onClick={this.hideMenu} className={this.state.projectsVisible? "visible" : this.state.menuToggled? "menu-link hidden" : "menu-link"} href="#projects-container"><h2 className={this.props.color? "color menu-option": "menu-option"}>PROJECTS</h2></a>
           <a onClick={this.hideMenu} className={this.state.aboutVisible? "visible" : this.state.menuToggled? "menu-link hidden" : "menu-link"} href="#about-container" ><h2 className={this.props.color? "color menu-option": "menu-option"}>ABOUT</h2></a>
-          <a onClick={this.hideMenu} className={this.state.resumeVisible? "visible" : this.state.menuToggled? "menu-link hidden" : "menu-link"} href="/Austin-Rowe.pdf"><h2 className={this.props.color? "color menu-option": "menu-option"}>R&Eacute;SUM&Eacute;</h2></a>
+          <a onClick={this.hideMenu} className={this.state.resumeVisible? "visible" : this.state.menuToggled? "menu-link hidden" : "menu-link"} href="/Austin-Rowe.pdf" target="_blank" rel="noopener noreferrer"><h2 className={this.props.color? "color menu-option": "menu-option"}>R&Eacute;SUM&Eacute;</h2></a>
           <div id="contact-link" onClick={this.hideMenu} className={this.state.contactVisible? "visible" : this.state.menuToggled? "menu-link hidden" : "menu-link"} >
             <a href="#contact-container" ><h2 className={this.props.color? "color menu-option": "menu-option"}>CONTACT</h2></a>
             <a className={this.props.color? "sub-color sub-menu-option": "sub-menu-option"} href="tel:+1-205-807-4715">

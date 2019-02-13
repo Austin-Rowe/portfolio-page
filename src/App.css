@@ -25,10 +25,25 @@
 
 .colorize {
     color: white;
-    background: linear-gradient(to bottom,  #2b3252, #ef5455, #fad744);
     border: 1px solid white;
     font-size: 20px;
     font-weight: 300;
+    background: linear-gradient(120deg, #2b3252, #ef5455, #fad744);
+    background-size: 300% 300%;
+    background-position: 0% 0%;
+    animation: wave 7s ease infinite;
+}
+
+@keyframes wave {
+    0%{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
 }
 
 body {

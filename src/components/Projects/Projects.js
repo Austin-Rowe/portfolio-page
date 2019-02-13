@@ -9,13 +9,11 @@ class Projects extends Component {
     render() { 
         const extensionImages = [
             {
-                original: "/price-sheet-screenshots/before.png",
-                thumbnail: "/price-sheet-screenshots/before.png",
+                original: "/price-sheet-screenshots/before-extension.png",
                 description: "Before Extension"
             },
             {
-                original: "/price-sheet-screenshots/after.png",
-                thumbnail: "/price-sheet-screenshots/after.png",
+                original: "/price-sheet-screenshots/after-extension.png",
                 description: "After Extension"
             }
         ]
@@ -49,9 +47,9 @@ class Projects extends Component {
             <div id="projects-container">
                 <h1 id="projects-title">My Projects</h1>
                 <div className="project-container">
-                    <h2 className="project-title" >RugZilla Ecommerce</h2>
+                    <h2 className="project-title" >RugZilla E-commerce</h2>
                     <div className="project-description-features">
-                        <p className="project-description">This is an ecommerce site I built. You can check it out <a href="http://ec2-18-188-129-119.us-east-2.compute.amazonaws.com:8000/" target="_blank" rel="noopener noreferrer">here.</a></p>
+                        <p className="project-description">This is an e-commerce site I built. You can check it out in production <a href="http://ec2-18-188-129-119.us-east-2.compute.amazonaws.com:8000/" target="_blank" rel="noopener noreferrer">here</a> and see the GitHub repository <a href="https://github.com/Austin-Rowe/rugzilla" target="_blank" rel="noopener noreferrer">here.</a></p>
                         <ul className="project-features-list">
                             <b>It uses:</b>
                             <li>ReactJS</li>
@@ -64,13 +62,13 @@ class Projects extends Component {
                     </div>
                     
                     <div className="project-image-gallery">
-                        <ImageGallery autoPlay items={rugzillaImages} showPlayButton={false}  />
+                        <ImageGallery autoPlay showPlayButton={false} showNav={false} slideInterval={5000} slideDuration={1000} items={rugzillaImages} />
                     </div>
                 </div>
                 <div className="project-container">
                     <h2 className="project-title" >Chrome Extension</h2>
                     <div className="project-description-features">
-                        <p className="project-description">This is a Chrome extension that I built for my current workplace so that we could create price sheets for our products more effeciently/aesthetically. You can check it out <a href="https://chrome.google.com/webstore/detail/price-sheet-processor/kibjjcncfioajehabcbdomochdolnkok" target="_blank" rel="noopener noreferrer">here.</a></p>
+                        <p className="project-description">This is a Chrome extension that I built for my current workplace so that we can create price sheets for our products more  efficiently/aesthetically. You can check it out in production <a href="https://chrome.google.com/webstore/detail/price-sheet-processor/kibjjcncfioajehabcbdomochdolnkok" target="_blank" rel="noopener noreferrer">here</a> and see the GitHub repository <a href="https://github.com/Austin-Rowe/unitex-chrome-ext" target="_blank" rel="noopener noreferrer">here.</a></p>
                         <ul className="project-features-list">
                             <b>It uses:</b>
                             <li>Vanilla JavaScript</li>
@@ -79,9 +77,10 @@ class Projects extends Component {
                         </ul>
                     </div>
                     <div className="project-image-gallery">
-                        <ImageGallery autoPlay showPlayButton showThumbnails={false} items={extensionImages} />
+                        <ImageGallery autoPlay showPlayButton showThumbnails={false} showNav={false} slideInterval={5000} slideDuration={1000} items={extensionImages} />
                     </div>
                 </div>
+                <h2>If you want to check out the current page's GitHub repository click <a href="https://github.com/Austin-Rowe/portfolio-page" target="_blank" rel="noopener noreferrer">here.</a></h2>
             </div>
         );
     }
