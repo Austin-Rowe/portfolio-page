@@ -23,3 +23,18 @@
     border: 2px solid black;
     filter: grayscale(100%);
 }
+
+.about-color-image {
+    max-width: 80vw;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+@media(min-width: 600px) {
+    .about-color-image {
+        max-width: 30vw;
+        display: inline;
+        border-radius: 0;
+        border: 0;
+    }
+}

@@ -2,13 +2,22 @@ import React, { Component } from 'react';
 
 import './Landing.css';
 
-const GrayScale = () => {
-    return(
-         <div id="landing-container">
-            <div className="landing-background"></div>
-            <h1 className="landing-quote">“It is not enough for code to work.” <br/>― Robert C. Martin</h1>
+const Color = () => {
+    return ( 
+        <div id="landing-container">
+            <div className="color-landing-background"></div>
+            <h1 className="landing-quote">CREATIVITY is FREEDOM</h1>
         </div>
-    )
+    );
+}
+ 
+const Grayscale = () => {
+    return ( 
+        <div id="landing-container" >
+            <div className="gray-landing-background"></div>
+            <h1 className="landing-quote code-font">CODE === LIFE</h1>
+        </div>
+    );
 }
 
 class Landing extends Component {
@@ -16,9 +25,12 @@ class Landing extends Component {
         super();
     }
 
-    render() { 
-        return (
-           <GrayScale />
+    render() {
+        let landing = this.props.color? <Color /> : <Grayscale />;
+        return(
+            <React.Fragment>
+                {landing}
+            </React.Fragment>
         );
     }
 }

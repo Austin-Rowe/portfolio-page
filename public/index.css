@@ -1,6 +1,11 @@
+*:focus {
+    outline: none;
+}
+
 html {
     scroll-behavior: smooth;
     width: 100vw;
+    background-color: rgb(230, 230, 230);
 }
 
 a {

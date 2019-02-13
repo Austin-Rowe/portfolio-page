@@ -1,0 +1,65 @@
+#loading-cover {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height: 100vh;
+    z-index: 4;
+}
+
+.grayscale {
+    background: linear-gradient(120deg, white, black);
+    background-size: 1000% 1000%;
+    background-position: 0% 0%;
+    animation: wave 5s ease infinite;
+}
+
+.color {
+    background: linear-gradient(120deg, #2b3252, #ef5455, #fad744);
+    background-size: 300% 300%;
+    background-position: 0% 0%;
+    animation: wave 7s ease infinite;
+}
+
+@keyframes wave {
+    0%{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+}
+
+#loading-text {
+    font-size: 2em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.grayscale-text {
+    animation: morph 5s ease infinite;
+}
+
+@keyframes morph {
+    0%{
+        color: black;
+    }
+    50%{
+        color: white;
+    }
+    100%{
+        color: black;
+    }
+}
+
+
+
+
+
+

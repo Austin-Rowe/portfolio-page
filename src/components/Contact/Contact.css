@@ -50,6 +50,14 @@
     border: 2px solid black;
 }
 
+#color-contact-pic {
+    max-width: 80vw;
+    max-height: 50vh;
+    margin: 0 auto 30px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
 @media(max-width: 380px) {
     .contact-text{
         font-size: 20px;
