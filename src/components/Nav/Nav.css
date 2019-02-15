@@ -1,75 +1,20 @@
 /* Menu */
-#menu {
+.menu {
     text-align: center;
     position: fixed;
     top: 0px;
+    left: 100vw;
     width: 100vw;
     z-index: 2;
 }
 
-.none {
-    position: relative; 
-    left: 100vw;
-}
+/* Menu Option */
 
-.menu-option {
-    background: radial-gradient(ellipse at top, black, rgb(39, 39, 39));
-    color: white;
-    margin: 0;
-    height: 40px;
-    padding-top: 10px;
-    border: 1px solid white;
-}
 
-.menu-option:hover {
-    background: rgb(51, 51, 51);
-}
-
-.sub-menu-option {
-    background: white;
-    color: black;
-    margin: 0;
-    height: 40px;
-    padding-top: 15px;
-    border: 1px solid black;
-    display: none;
-}
-
-.sub-menu-option:hover{
-    background: rgb(218, 218, 218);
-}
-
-.contact-icon {
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;
-}
-
-.contact-icon:hover {
-    transform: scale(1.3) rotate(360deg);
-}
-
-.sub-option-text {
-    display: inline;
-}
-
-.sub-menu-option:hover .contact-icon {
-    transform: scale(1.3) rotate(360deg);
-}
-
-#contact-link:hover .sub-menu-option{
-    display: block;
-}
-
-.menu-link {
-    position: relative;
-    left: 100vw;
-    z-index: 2;
-}
 
 .visible {
     animation: slide-in 500ms;
-    position: relative;
+    position: fixed;
     left: 0;
     z-index: 2;
 }
@@ -80,38 +25,39 @@
 
 @keyframes slide-in{
     from{
-        position: relative;
+        position: fixed;
         left: 100vw;
     }
     to{
-        position: relative;
+        position: fixed;
         left: 0;
     }
 }
 
 @keyframes slide-out{
     0%{
-        position: relative; 
+        position: fixed; 
         left: 0;
     }
-    25%{
-        position: relative;
-        left: 25vw;
-    }
-    50%{
-        position: relative;
-        left: 60vw;
-    }
-    75% {
-        position: relative;
-        left: 85vw;
-    }
     100% {
-        position: relative;
+        position: fixed;
         left: 100vw;
     }
 }
 
+/*menu-option*/
+.menu-option {
+    background: radial-gradient(ellipse at top, black, rgb(46, 46, 46));
+    color: white;
+    margin: 0;
+    height: 40px;
+    padding-top: 10px;
+    border: 1px solid white;
+}
+
+.menu-option:hover {
+    background: rgb(51, 51, 51);
+}
 
 /*Drop-Down Toggle */
 #drop-down-toggle {
@@ -134,16 +80,3 @@
     border: solid black 1px;
 }
 
-.color {
-    border: solid white 1px;
-}
-
-.sub-color {
-    background: rgb(209, 209, 209);
-    border: solid rgb(158, 158, 158) 1px;
-    color: #306383 !important;
-}
-
-.sub-color:hover {
-    background-color: rgb(158, 158, 158);
-}
