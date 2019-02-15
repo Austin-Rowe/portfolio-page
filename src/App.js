@@ -28,19 +28,21 @@ class App extends Component {
       this.setState({loading: true});
       setTimeout(()=>{
         this.setState({loading: false})
-      }, 7000);
+      }, 5000);
     } else {
       setTimeout(()=>{
         this.setState({loading: false})
-      }, 7000);
+      }, 5000);
     }
     switch(this.state.colorSwitchCount){
       case 1: this.setState({loadingComment: "LETS GET CREATIVE!"}); break;
       case 2: this.setState({loadingComment: "BACK TO BLAH"}); break;
-      case 3: this.setState({loadingComment: "NOW YOU'RE WONDERING..."}); break;
-      case 4: this.setState({loadingComment: "HOW FAR DOES THIS GO?"}); break;
-      case 5: this.setState({loadingComment: "YOU SEEM COMMITTED"}); break;
-      case 6: this.setState({loadingComment: "AND NOW IT PAYS OFF!"}); break;
+      case 3: this.setState({loadingComment: "RETURNING TO BEAUTY"}); break;
+      case 4: this.setState({loadingComment: "MAKING THINGS BLAND... AGAIN"}); break;
+      case 5: this.setState({loadingComment: "WOW YOU'RE SWITCHING A LOT"}); break;
+      case 6: this.setState({loadingComment: "IT'S STARTING TO WORRY ME"}); break;
+      case 7: this.setState({loadingComment: "PERHAPS YOU SHOULD CALL ME"}); break;
+      case 8: this.setState({loadingComment: "OKAY, YOU SHOULD DEFINITELY CALL ME"}); break;
       default: break;
     }
     this.setState(state => ({colorSwitchCount: state.colorSwitchCount + 1}));

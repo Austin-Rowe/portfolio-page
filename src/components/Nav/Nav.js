@@ -6,6 +6,7 @@ class Nav extends Component {
   constructor(){
     super();
     this.state = {
+      menuDisplayNone: true,
       projectsVisible: false,
       aboutVisible: false,
       resumeVisible: false,
@@ -28,6 +29,8 @@ class Nav extends Component {
     Object.keys(this.state).forEach(option => {
       if(option === "menuToggled"){
         setTimeout(() => {this.setState({menuToggled: true})}, time);
+      } else if(option === "menuDisplayNone"){
+        this.state.menuDisplayNone? this.toggleMenuOption(option, time) : this.toggleMenuOption(option, 750);
       } else {
         this.toggleMenuOption(option, time);
       }
@@ -40,6 +43,8 @@ class Nav extends Component {
     Object.keys(this.state).forEach(option => {
       if(option === "menuToggled"){
         return;
+      } else if(option === "menuDisplayNone"){
+        setTimeout(() => {this.setState({[option]: true})}, 750);
       } else {
         setTimeout(() => {this.setState({[option]: false})}, time);
       }
@@ -55,7 +60,7 @@ class Nav extends Component {
           <div className={this.props.color? "color drop-down-toggle-bar": "drop-down-toggle-bar"}></div>
           <div className={this.props.color? "color drop-down-toggle-bar": "drop-down-toggle-bar"}></div>
         </div>
-        <div id="menu" onMouseLeave={this.hideMenu}>
+        <div id="menu" className={this.state.menuDisplayNone? "none" : ""} onMouseLeave={this.hideMenu}>
           <a onClick={this.hideMenu} className={this.state.projectsVisible? "visible" : this.state.menuToggled? "menu-link hidden" : "menu-link"} href="#projects-container"><h2 className={this.props.color? "color menu-option": "menu-option"}>PROJECTS</h2></a>
           <a onClick={this.hideMenu} className={this.state.aboutVisible? "visible" : this.state.menuToggled? "menu-link hidden" : "menu-link"} href="#about-container" ><h2 className={this.props.color? "color menu-option": "menu-option"}>ABOUT</h2></a>
           <a onClick={this.hideMenu} className={this.state.resumeVisible? "visible" : this.state.menuToggled? "menu-link hidden" : "menu-link"} href="/Austin-Rowe.pdf" target="_blank" rel="noopener noreferrer"><h2 className={this.props.color? "color menu-option": "menu-option"}>R&Eacute;SUM&Eacute;</h2></a>
