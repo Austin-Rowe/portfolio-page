@@ -15,12 +15,10 @@ class App extends Component {
       color: false,
       loading: true,
       colorSwitchCount: 0,
-      loadingComment: "JUST A MOMENT",
-      mobile: false
+      loadingComment: "JUST A MOMENT"
     }
     this.colorToggle = this.colorToggle.bind(this);
     this.triggerLoadScreen = this.triggerLoadScreen.bind(this);
-    this.watchWindowResize = this.watchWindowResize.bind(this);
   }
 
   triggerLoadScreen(){
@@ -48,19 +46,8 @@ class App extends Component {
     this.setState(state => ({colorSwitchCount: state.colorSwitchCount + 1}));
   }
 
-  watchWindowResize(){
-    if(this.state.mobile && window.innerWidth > 549){
-      this.triggerLoadScreen();
-      this.setState({mobile: false})
-    } else if(!this.state.mobile && window.innerWidth < 550){
-      this.triggerLoadScreen();
-      this.setState({mobile: true})
-    }
-  }
-
   componentDidMount(){
     this.triggerLoadScreen();
-    window.addEventListener('resize', this.watchWindowResize);
   }
 
   colorToggle(){
