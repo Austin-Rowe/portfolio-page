@@ -33,11 +33,11 @@ class App extends Component {
       }, 5000);
     }
     switch(this.state.colorSwitchCount){
-      case 1: this.setState({loadingComment: "LETS GET CREATIVE!"}); break;
+      case 1: this.setState({loadingComment: "LET'S GET CREATIVE!"}); break;
       case 2: this.setState({loadingComment: "BACK TO BLAH"}); break;
       case 3: this.setState({loadingComment: "RETURNING TO BEAUTY"}); break;
       case 4: this.setState({loadingComment: "MAKING THINGS BLAND... AGAIN"}); break;
-      case 5: this.setState({loadingComment: "WOW YOU'RE SWITCHING A LOT"}); break;
+      case 5: this.setState({loadingComment: "WOW! YOU'RE SWITCHING A LOT"}); break;
       case 6: this.setState({loadingComment: "IT'S STARTING TO WORRY ME"}); break;
       case 7: this.setState({loadingComment: "PERHAPS YOU SHOULD CALL ME"}); break;
       case 8: this.setState({loadingComment: "OKAY, YOU SHOULD DEFINITELY CALL ME"}); break;

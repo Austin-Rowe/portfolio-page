@@ -27,21 +27,14 @@
 .project-image-gallery{
     margin: 0 auto 50px;
     max-width: 90%;
-    max-height: 90vh;
     position: relative;
     left: 0;
     z-index: 1;
 }
 
-.extension-image-gallery {
-    margin: 0 auto 50px;
-    max-width: 90%;
-    height: 90vh;
-    position: relative;
-    left: 0;
-    z-index: 1;
+#current-repo {
+    text-align: center;
 }
-
 
 @media (min-width: 620px) and (max-width: 1000px) {
     .project-description-features{
@@ -83,7 +76,4 @@
         grid-row: 2/4;
     }
 
-    .extension-image-gallery {
-        height: 50vh;
-    }
 }

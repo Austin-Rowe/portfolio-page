@@ -12,7 +12,7 @@ class About extends Component {
                 <h1 id="about-title">About Me</h1>
                 <h3 className="about-header">Professional</h3>
                 <p className="about-text">
-                    I started working at the age of 15 and have worked a few different jobs in the retail and food industries. I've always known I needed to move on to greater opportunities. Starting in 2018, I went from full-time to part-time work so that I would have the free time to pursue a software development career. I started out with Team Treehouse, completed their front-end developer track, and haven't looked back since! I didn't believe I would enjoy programming as much as I have!
+                    I started working at the age of 15 and have worked a few different jobs in the retail and food industries. That being said, I've always known I needed to use my talents and passion to make a larger impact on the world. That is why starting in 2018, I went from full-time to part-time work so that I would have the free time to pursue a software development career. I started out with Team Treehouse, completed their front-end developer track, and haven't looked back since. I would've never believed I would enjoy programming as much as I have and am thrilled to see what kind of impact I can make through technology!
                 </p>
                 <h3 className="about-header">Personal Life</h3>
                 <p className="about-text">
