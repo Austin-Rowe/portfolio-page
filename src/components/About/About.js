@@ -16,11 +16,19 @@ class About extends Component {
                 </p>
                 <h3 className="about-header">Personal Life</h3>
                 <p className="about-text">
-                    In my free time, I enjoy primarily adventurous activities. I love traveling, climbing/parkour, riding motorcycles, and more. I am generally outgoing and enjoy meeting new people whenever the opportunity presents itself. Although I am adventurous, some of my favorite times are when I sit down to a nice meal with friends.    
+                    In my free time, I enjoy primarily adventurous activities. I love traveling, climbing/parkour, riding motorcycles, and more. I am generally outgoing and enjoy meeting new people whenever the opportunity presents itself.   
                 </p>
-                {this.props.color? <div id="about-color-images-container"><img className="about-color-image" src="https://s3.us-east-2.amazonaws.com/austin-rowe/ActionColor1.jpg" alt=""/><img className="about-color-image" src="https://s3.us-east-2.amazonaws.com/austin-rowe/ActionColor2.jpg" alt=""/><img className="about-color-image" src="https://s3.us-east-2.amazonaws.com/austin-rowe/ActionColor3.jpg" alt=""/></div>:<img className="about-pic" src="https://s3.us-east-2.amazonaws.com/austin-rowe/action-gray.jpg" alt=""/>}
+                {this.props.color? 
+                    <div id="about-color-images-container">
+                        <img className="about-color-image" src="/myImages/ActionColor1.jpg" alt=""/>
+                        <img className="about-color-image" src="/myImages/ActionColor2.jpg" alt=""/>
+                        <img className="about-color-image" src="/myImages/ActionColor3.jpg" alt=""/>
+                    </div>
+                    :
+                    <img className="about-pic" src="/myImages/ActionGrey.jpg" alt=""/>
+                }
                 <p className="about-text">
-                    I am a devout Christian and am always trying to emulate the life and love of Christ. One of my most meaningful seasons so far was when I went to Harvest School in Pemba, Mozambique. The experience I had there taught me so much about the love of God for those who are lost and desperately in need of His touch through our lives as Christians. This understanding of God's love is my deepest motivation in all that I do and pursue.
+                    If you have any questions or would like to set up an interview please use the contact information below. I look forward to hearing from you!
                 </p>
             </div>
         );

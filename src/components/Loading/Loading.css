@@ -11,14 +11,14 @@
     background: linear-gradient(120deg, white, black);
     background-size: 1000% 1000%;
     background-position: 0% 0%;
-    animation: wave 5s ease infinite;
+    animation: wave 3s ease infinite;
 }
 
 .color {
     background: linear-gradient(120deg, #2b3252, #ef5455, #fad744);
     background-size: 300% 300%;
     background-position: 0% 0%;
-    animation: wave 7s ease infinite;
+    animation: wave 3s ease infinite;
 }
 
 @keyframes wave {
@@ -43,7 +43,7 @@
 }
 
 .grayscale-text {
-    animation: morph 5s ease infinite;
+    animation: morph 3s ease infinite;
 }
 
 @keyframes morph {

@@ -4,83 +4,152 @@ import "react-image-gallery/styles/css/image-gallery.css";
 
 import './Projects.css';
 
+const Project = (props) => {
+    const usedTechItems = props.resources.usedTech.map(item => <li>{item}</li>);
+    return (  
+        <div className="project-container">
+            <h2 className="project-title" >{props.title}</h2>
+            <div className="project-description-features">
+                <p className="project-description">{props.description} <a href={props.gitLink} target="_blank" rel="noopener noreferrer">here.</a></p>
+                <ul className="project-features-list">
+                    <b>It uses:</b>
+                    {usedTechItems}
+                </ul>
+            </div>
+            
+            <div className="project-image-gallery">
+                <ImageGallery autoPlay showNav={false} showFullscreenButton={true} slideInterval={5000} slideDuration={1000} items={props.resources.images} />
+            </div>
+        </div>
+    );
+}
+ 
+
 class Projects extends Component {
-    state = {  }
     render() { 
-        const extensionImages = [
-            {
-                original: "/price-sheet-screenshots/before-extension.png",
-                description: "Before Extension"
-            },
-            {
-                original: "/price-sheet-screenshots/after-extension.png",
-                description: "After Extension"
-            }
-        ]
-        const rugzillaImages = [
-            {
-                original: "/rugzilla-screenshots/home-page.png",
-                thumbnail:"/rugzilla-screenshots/home-page.png",
-            },
-            {
-                original: "/rugzilla-screenshots/product-page.png",
-                thumbnail:"/rugzilla-screenshots/product-page.png",
-            },
-            {
-                original: "/rugzilla-screenshots/cart.png",
-                thumbnail:"/rugzilla-screenshots/cart.png",
-            },
-            {
-                original: "/rugzilla-screenshots/info-form.png",
-                thumbnail:"/rugzilla-screenshots/info-form.png",
-            },
-            {
-                original: "/rugzilla-screenshots/confirm-pay.png",
-                thumbnail:"/rugzilla-screenshots/confirm-pay.png",
-            },
-            {
-                original: "/rugzilla-screenshots/payment-confirmation.png",
-                thumbnail:"/rugzilla-screenshots/payment-confirmation.png",
-            }
-        ]
+        const bestCloserResources = {
+            images: [
+                {
+                    original: "/best-closer-screenshots/login.jpg",
+                    thumbnail: "/best-closer-screenshots/login.jpg",
+                    description: ""
+                },
+                {
+                    original: "/best-closer-screenshots/watch-live.jpg",
+                    thumbnail: "/best-closer-screenshots/watch-live.jpg",
+                    description: ""
+                },
+                {
+                    original: "/best-closer-screenshots/watch-archive.jpg",
+                    thumbnail: "/best-closer-screenshots/watch-archive.jpg",
+                    description: ""
+                }
+            ],
+            usedTech: [
+                "ReactJS",
+                "Redux",
+                "NodeJS",
+                "ExpressJS",
+                "MongoDB",
+                "Mongoose",
+                "JSON Web Token Authentication",
+                "Large file uploads/streaming",
+                "Live video streaming",
+                "Amazon EC2",
+                "Digital Ocean Droplet",
+                "Nginx",
+                "PayPal Subscriptions"
+            ]
+        }
+        const indictmentResources = {
+            images: [
+                {
+                    original: "/indictment-screenshots/home-header.jpg",
+                    thumbnail: "/indictment-screenshots/home-header.jpg",
+                    description: ""
+                },
+                {
+                    original: "/indictment-screenshots/home-footer.jpg",
+                    thumbnail: "/indictment-screenshots/home-footer.jpg",
+                    description: ""
+                },
+                {
+                    original: "/indictment-screenshots/cart.jpg",
+                    thumbnail: "/indictment-screenshots/cart.jpg",
+                    description: ""
+                }
+            ],
+            usedTech: [
+                "ReactJS",
+                "Redux",
+                "NodeJS",
+                "ExpressJS",
+                "PayPal Payments",
+                "Amazon EC2",
+            ]
+        }
+        const extensionResources = {
+            images: [
+                {
+                    original: "/price-sheet-screenshots/before-extension.png",
+                    thumbnail: "/price-sheet-screenshots/before-extension.png",
+                    description: "Before Extension"
+                },
+                {
+                    original: "/price-sheet-screenshots/after-extension.png",
+                    thumbnail: "/price-sheet-screenshots/after-extension.png",
+
+                    description: "After Extension"
+                }
+            ],
+            usedTech: [
+                "Vanilla JavaScript",
+                "DOM Manipulation"
+            ]
+        }
+        const rugzillaResources = {
+            images: [
+                {
+                    original: "/rugzilla-screenshots/home-page.png",
+                    thumbnail:"/rugzilla-screenshots/home-page.png",
+                },
+                {
+                    original: "/rugzilla-screenshots/product-page.png",
+                    thumbnail:"/rugzilla-screenshots/product-page.png",
+                },
+                {
+                    original: "/rugzilla-screenshots/cart.png",
+                    thumbnail:"/rugzilla-screenshots/cart.png",
+                },
+                {
+                    original: "/rugzilla-screenshots/info-form.png",
+                    thumbnail:"/rugzilla-screenshots/info-form.png",
+                },
+                {
+                    original: "/rugzilla-screenshots/confirm-pay.png",
+                    thumbnail:"/rugzilla-screenshots/confirm-pay.png",
+                },
+                {
+                    original: "/rugzilla-screenshots/payment-confirmation.png",
+                    thumbnail:"/rugzilla-screenshots/payment-confirmation.png",
+                }
+            ],
+            usedTech: [
+                "ReactJS",
+                "Redux",
+                "NodeJS",
+                "ExpressJS",
+                "PayPal Payments"
+            ]
+        }
         return ( 
             <React.Fragment>
                 <div id="projects-container">
                     <h1 id="projects-title">My Projects</h1>
-                    <div className="project-container">
-                        <h2 className="project-title" >RugZilla E-commerce</h2>
-                        <div className="project-description-features">
-                            <p className="project-description">This is an e-commerce site I built. You can check it out in production <a href="http://ec2-18-188-129-119.us-east-2.compute.amazonaws.com:8000/" target="_blank" rel="noopener noreferrer">here</a> and see the GitHub repository <a href="https://github.com/Austin-Rowe/rugzilla" target="_blank" rel="noopener noreferrer">here.</a></p>
-                            <ul className="project-features-list">
-                                <b>It uses:</b>
-                                <li>ReactJS</li>
-                                <li>Redux</li>
-                                <li>NodeJS w/ Express</li>
-                                <li>PayPal Integration</li>
-                                <li>Amazon EC2</li>
-                                <li>Amazon S3</li>
-                            </ul>
-                        </div>
-                        
-                        <div className="project-image-gallery">
-                            <ImageGallery autoPlay showNav={false} showFullscreenButton={false} slideInterval={5000} slideDuration={1000} items={rugzillaImages} />
-                        </div>
-                    </div>
-                    <div className="project-container">
-                        <h2 className="project-title" >Chrome Extension</h2>
-                        <div className="project-description-features">
-                            <p className="project-description">This is a Chrome extension that I built for my current workplace so that we can create price sheets more efficiently and aesthetically. You can check it out in production <a href="https://chrome.google.com/webstore/detail/price-sheet-processor/kibjjcncfioajehabcbdomochdolnkok" target="_blank" rel="noopener noreferrer">here</a> and see the GitHub repository <a href="https://github.com/Austin-Rowe/unitex-chrome-ext" target="_blank" rel="noopener noreferrer">here.</a></p>
-                            <ul className="project-features-list">
-                                <b>It uses:</b>
-                                <li>Vanilla JavaScript</li>
-                                <li>DOM manipulation</li>
-                                <li>OOJ</li>
-                            </ul>
-                        </div>
-                        <div className="project-image-gallery">
-                            <ImageGallery autoPlay showPlayButton showThumbnails={false} showNav={false} showFullscreenButton={false} slideInterval={5000} slideDuration={1000} items={extensionImages} />
-                        </div>
-                    </div>
+                    <Project resources={bestCloserResources} title="Best Closer Show" gitLink="https://bestclosershow.com" description="Live streaming/archive playback website with user system requiring subscription to access resources(use promo code #CloserTrial to get access for 1 week). Due to the fact that it is live I can't share the repository but you can check it out live" />
+                    <Project resources={indictmentResources} title="Indictment Clothing" gitLink="https://indictmentclothing.com" description="Minimalistic e-commerce clothing site I built freelancing. Due to the fact that it is live I can't share the repository but you can check it out live" />
+                    <Project resources={rugzillaResources} title="RugZilla E-Commerce" gitLink="https://github.com/Austin-Rowe/rugzilla" description="This is a mock e-commerce site I built. You can check out the GitHub repository" />
+                    <Project resources={extensionResources} title="Chrome Extension" gitLink="https://github.com/Austin-Rowe/unitex-chrome-ext" description="This is a Chrome extension that I built for my previous workplace so that we could create price sheets more efficiently and aesthetically. You can see the GitHub repository" />
                 </div>
                 <h2 id="current-repo">If you want to check out the current page's GitHub repository click <a href="https://github.com/Austin-Rowe/portfolio-page" target="_blank" rel="noopener noreferrer">here.</a></h2>
             </React.Fragment>

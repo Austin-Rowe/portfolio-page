@@ -9,7 +9,7 @@ class Contact extends Component {
         return ( 
             <div id="contact-container">
                 <h1 id="contact-title">Contact Me</h1>
-                <img id={this.props.color? "color-contact-pic": "contact-pic"} src={this.props.color? "https://s3.us-east-2.amazonaws.com/austin-rowe/HeadShotColor.jpg":"https://s3.us-east-2.amazonaws.com/austin-rowe/HeadShotGreyScale1.jpg"} alt=""/>
+                <img id={this.props.color? "color-contact-pic": "contact-pic"} src={this.props.color? "/myImages/HeadShotColor.jpg" : "/myImages/HeadShotGreyScale1.jpg"} alt=""/>
                 <div>
                     <div className="contact-link-container">
                         <a className="contact-link" href="tel:+1-205-807-4715">
