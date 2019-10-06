@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactGA from 'react-ga';
 
 import './Nav.css';
 
@@ -13,8 +14,14 @@ class Nav extends Component {
     this.hideMenu = this.hideMenu.bind(this);
   }
 
-  menuToggle(){
+  menuToggle(e){
     this.setState(state => ({menuVisible: !state.menuVisible, menuToggled: true}));
+    if(e.target.parentNode.href && e.target.parentNode.href.includes('Austin-Rowe.pdf')){
+      ReactGA.event({
+        category: 'User-Action',
+        action: 'User clicked to view resume'
+      })
+    }
   }
 
   hideMenu(){

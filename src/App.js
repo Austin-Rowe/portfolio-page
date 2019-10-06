@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 
 import './App.css';
 import Nav from './components/Nav/Nav';
@@ -26,11 +27,11 @@ class App extends Component {
       this.setState({loading: true});
       setTimeout(()=>{
         this.setState({loading: false})
-      }, 5000);
+      }, 3000);
     } else {
       setTimeout(()=>{
         this.setState({loading: false})
-      }, 5000);
+      }, 3000);
     }
     switch(this.state.colorSwitchCount){
       case 1: this.setState({loadingComment: "LET'S GET CREATIVE!"}); break;
@@ -48,6 +49,8 @@ class App extends Component {
 
   componentDidMount(){
     this.triggerLoadScreen();
+    ReactGA.initialize('UA-149461255-1');
+    ReactGA.pageview('/homepage');
   }
 
   colorToggle(){

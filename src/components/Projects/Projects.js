@@ -5,7 +5,7 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import './Projects.css';
 
 const Project = (props) => {
-    const usedTechItems = props.resources.usedTech.map(item => <li>{item}</li>);
+    const usedTechItems = props.resources.usedTech.map(item => <li key={item}>{item}</li>);
     return (  
         <div className="project-container">
             <h2 className="project-title" >{props.title}</h2>
