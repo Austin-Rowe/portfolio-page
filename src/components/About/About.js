@@ -5,7 +5,6 @@ import './About.css';
 
 
 class About extends Component {
-    state = {  }
     render() { 
         return ( 
             <div id="about-container">
@@ -20,12 +19,12 @@ class About extends Component {
                 </p>
                 {this.props.color? 
                     <div id="about-color-images-container">
-                        <img className="about-color-image" src="/myImages/ActionColor1.jpg" alt=""/>
-                        <img className="about-color-image" src="/myImages/ActionColor2.jpg" alt=""/>
-                        <img className="about-color-image" src="/myImages/ActionColor3.jpg" alt=""/>
+                        <img className="about-color-image" src="/myImages/ActionColor1.JPG" alt=""/>
+                        <img className="about-color-image" src="/myImages/ActionColor2.JPG" alt=""/>
+                        <img className="about-color-image" src="/myImages/ActionColor3.JPG" alt=""/>
                     </div>
                     :
-                    <img className="about-pic" src="/myImages/ActionGrey.jpg" alt=""/>
+                    <img className="about-pic" src="/myImages/ActionGrey.JPG" alt=""/>
                 }
                 <p className="about-text">
                     If you have any questions or would like to set up an interview please use the contact information below. I look forward to hearing from you!

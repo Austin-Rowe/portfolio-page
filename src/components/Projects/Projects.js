@@ -18,7 +18,7 @@ const Project = (props) => {
             </div>
             
             <div className="project-image-gallery">
-                <ImageGallery autoPlay showNav={false} showFullscreenButton={true} slideInterval={5000} slideDuration={1000} items={props.resources.images} />
+                <ImageGallery autoPlay={false} showNav={false} showFullscreenButton={true} slideInterval={5000} slideDuration={1000} items={props.resources.images} />
             </div>
         </div>
     );
@@ -30,18 +30,18 @@ class Projects extends Component {
         const bestCloserResources = {
             images: [
                 {
-                    original: "/best-closer-screenshots/login.jpg",
-                    thumbnail: "/best-closer-screenshots/login.jpg",
+                    original: "/best-closer-screenshots/login.JPG",
+                    thumbnail: "/best-closer-screenshots/login.JPG",
                     description: ""
                 },
                 {
-                    original: "/best-closer-screenshots/watch-live.jpg",
-                    thumbnail: "/best-closer-screenshots/watch-live.jpg",
+                    original: "/best-closer-screenshots/watch-live.JPG",
+                    thumbnail: "/best-closer-screenshots/watch-live.JPG",
                     description: ""
                 },
                 {
-                    original: "/best-closer-screenshots/watch-archive.jpg",
-                    thumbnail: "/best-closer-screenshots/watch-archive.jpg",
+                    original: "/best-closer-screenshots/watch-archive.JPG",
+                    thumbnail: "/best-closer-screenshots/watch-archive.JPG",
                     description: ""
                 }
             ],
@@ -64,18 +64,18 @@ class Projects extends Component {
         const indictmentResources = {
             images: [
                 {
-                    original: "/indictment-screenshots/home-header.jpg",
-                    thumbnail: "/indictment-screenshots/home-header.jpg",
+                    original: "/indictment-screenshots/home-header.JPG",
+                    thumbnail: "/indictment-screenshots/home-header.JPG",
                     description: ""
                 },
                 {
-                    original: "/indictment-screenshots/home-footer.jpg",
-                    thumbnail: "/indictment-screenshots/home-footer.jpg",
+                    original: "/indictment-screenshots/home-footer.JPG",
+                    thumbnail: "/indictment-screenshots/home-footer.JPG",
                     description: ""
                 },
                 {
-                    original: "/indictment-screenshots/cart.jpg",
-                    thumbnail: "/indictment-screenshots/cart.jpg",
+                    original: "/indictment-screenshots/cart.JPG",
+                    thumbnail: "/indictment-screenshots/cart.JPG",
                     description: ""
                 }
             ],
